@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* font-family: 'Poppins', sans-serif;*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: cyan;
+    margin-bottom: 100px;
+}
+
+nav img{
+    padding: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+}
+li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(257, 7%, 63%);
+    font-weight: 700;
+}
+li:nth-child(5){
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    padding: 13px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 50px;
+}
+li a:hover{
+    color: black;
+}
+.menu{
+    display: none;
+}
+.menu span{
+    color: grey;
+    font-size: 2.5rem;
+}
+aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+aside > div h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: hsl(255, 11%, 22%);
+}
+aside > div p{
+    color:hsl(257, 7%, 63%);
+}
+aside > div span{
+    border: 2px solid cyan;
+    padding: 15px;
+    position: relative;
+    top: 20px;
+    background-color: cyan;
+    border-radius: 10px;
+}
+aside > div span a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+#main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(257, 27%, 26%);
+    padding: 20px;
+    margin: 100px 120px;
+    border-radius: 10px;
+    box-shadow: 2px 10px 15px grey;
+    background-image: url(/images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#input-field{
+    width: 70%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+#input-field:focus{
+    outline: none;
+}
+button{
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color:hsl(180, 66%, 49%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.url-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    padding: 20px;
+    width: auto;
+    margin: 50px;
+    border-radius: 10px;
+}
+.url-container > div{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    padding: 25px;
+    width: auto;
+    margin: 20px;
+    border-radius: 10px;
+}
+.shortlink{
+    color: hsl(180, 66%, 49%);
+    padding: 15px;
+}
+.copyButton{
+    background-color:hsl(257, 27%, 26%);
+    color: white;
+}
+section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-container-1{
+    text-align: center;
+    margin: 20px;
+}
+.section-container-1 h3{
+    font-size: 2.3rem;
+}
+.section-container-1 p{
+    color: hsl(257, 7%, 63%);
+    font-weight: 700;
+}
+.card {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.card-one, .card-two, .card-three{
+    margin: 50px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    box-shadow: 2px 4px 20px grey;
+    border-radius: 5px;
+}
+.card-content{
+    color:hsl(257, 7%, 63%);
+}
+.section-container-3{
+    margin-top: 90px;
+    background-color: hsl(257, 27%, 26%);
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+.section-container-3 h2{
+    font-size: 2.3rem;
+    color: white;
+    margin: 50px;
+}
+.section-container-3 span a {
+    text-decoration: none;
+    color: white;
+    background-color: cyan;
+    padding: 15px;
+    border-radius:5px;
+}
+.section-container-3 span a:hover{
+    background-color: hsl(0, 0%, 75%);
+}
+footer{
+    height: 300px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+}
+footer img{
+    padding: 40px 20px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 578px) {
+    img{
+        width: 100%;
+        height: auto;
+    }
+    header{
+        background-color: rebeccapurple;
+    }
+    .menu{
+        display: block;
+    }
+    .menu span {
+        color: white;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        height: auto;
+        padding: 20px;
+        background-color: hsl(257, 27%, 26%);
+        color: white;
+        border-radius: 10px;
+        position: absolute;
+        top: 50px;
+        left: 70px;
+        display: none;
+    }
+    nav ul li{
+        padding: 0;
+    }
+    nav ul li:nth-child(5){
+        padding: 0;
+        border-radius: 0;
+    }
+    .showMenu{
+        display: block;
+    }
+    nav ul li {
+        padding: 20px;
+    }
+    nav ul li:nth-child(5){
+        background: none;
+    }
+    aside{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    aside > div h1{
+        font-size: 2rem;
+    }
+    main{
+        padding: 20px;
+    }
+    #main-container{
+        margin: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 90px auto;
+
+    }
+    #input-field{
+        width: auto;
+    }
+    .url-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .url-container > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        width: auto;
+        padding: 20px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .card img{
+        width: 50%;
+        height: auto;
+    }
+    .card-one, .card-two, .card-three{
+        margin: 20px;
+        box-shadow: none;
+        text-align: center;
+    }
+    .section-container-3{
+        height: 300px;
+        font-size: 1.3rem;
+    }
+    footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer img{
+        width: 10%;
+    }
+    
+}
